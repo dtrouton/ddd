@@ -1,0 +1,29 @@
+{
+  "description": "DDD integration hooks - injects domain-driven design considerations during feature development",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Analyze if this user prompt involves feature development, new functionality, system design, or architectural work. If yes, return a brief DDD reminder (2-3 sentences) suggesting the user consider: which bounded context this belongs to, what domain events it produces/consumes, and whether the ubiquitous language is being used correctly. If the prompt is about debugging, documentation, simple questions, or non-feature work, return empty string. Keep any reminder concise and actionable.",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-domain-docs.sh",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

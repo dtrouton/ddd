@@ -1,0 +1,9 @@
+{
+  "name": "ddd",
+  "version": "0.1.0",
+  "description": "Domain Driven Design plugin - guides users through Strategic DDD concepts using Event Storming methodology",
+  "author": {
+    "name": "dtrouton"
+  },
+  "keywords": ["ddd", "domain-driven-design", "event-storming", "bounded-contexts", "architecture"]
+}
