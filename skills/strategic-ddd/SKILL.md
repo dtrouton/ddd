@@ -179,3 +179,7 @@ To begin domain exploration:
 6. Iterate as understanding deepens
 
 Use `/ddd:explore` to start a guided domain exploration session.
+
+Once you have domain documentation, use `/ddd:scaffold` to generate tactical DDD code (aggregates, events, value objects, repositories) from your documented model.
+
+Use `/ddd:drift` to check whether your code has diverged from the domain documentation — it detects undocumented contexts, boundary violations, glossary misuse, and stale docs.

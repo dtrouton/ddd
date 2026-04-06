@@ -1,7 +1,7 @@
 {
   "name": "ddd",
-  "version": "0.1.0",
-  "description": "Domain Driven Design plugin - guides users through Strategic DDD concepts using Event Storming methodology",
+  "version": "0.2.0",
+  "description": "Domain Driven Design plugin - Strategic DDD, tactical code scaffolding, and drift detection using Event Storming methodology",
   "author": {
     "name": "dtrouton"
   },
